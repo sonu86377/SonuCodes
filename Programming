@@ -1,0 +1,31 @@
+package Pack;
+import java.util.Scanner;
+
+class info{
+	String username;
+	String password;
+	
+	info(String username,String password)
+	{
+		this.username=username;
+		this.password=password;
+	}
+	void details()
+	{
+		System.out.println("Usrename = "+username+" Password = "+password);
+	}
+}
+
+public class demo5 {
+
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Enter the username = ");
+		String un=scn.next();
+		System.out.println("Enter the Password : ");
+		String ps=scn.next();
+		info d1=new info(un,ps);
+		d1.details();
+	}
+
+}
